@@ -1,0 +1,14 @@
+<launch>
+
+  <node pkg="ros_realsense" type="rs_pub" name="realsense_publisher"/>
+
+  <node pkg="ros_realsense" type="roi_pub" name="roi_publisher"/>
+
+  <node pkg="ros_realsense" type="csrt" name="object_tracker"/>
+
+  <node pkg="ros_realsense" type="depth" name="depth_publisher" output="screen"/>
+
+  <node pkg="ros_realsense" type="kalman" name="velocity_publisher" output="screen"/>
+
+
+</launch>

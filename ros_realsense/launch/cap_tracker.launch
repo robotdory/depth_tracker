@@ -1,0 +1,14 @@
+<launch>
+  //realsense Publisher 노드 실행 
+  <node pkg="ros_realsense" type="screen_pub" name="screen_publisher"/>
+
+  <node pkg="ros_realsense" type="roi_pub" name="roi_publisher"/>
+
+  <node pkg="ros_realsense" type="csrt" name="object_tracker"/>
+
+  <node pkg="ros_realsense" type="depth" name="depth_publisher"/>
+
+  <node pkg="ros_realsense" type="kalman" name="velocity_publisher"/>
+
+
+</launch>
